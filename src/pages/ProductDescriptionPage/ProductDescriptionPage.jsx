@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductDescriptionPage.css"; // Import the CSS file
 import { useParams } from "react-router-dom";
 
-import { IMAGE_URL } from "../../components/constants";
+import { IMAGE_URL } from "../../constants/constants";
 import { useSelector } from "react-redux";
 
 function ProductDescriptionPage() {

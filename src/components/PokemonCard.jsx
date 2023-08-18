@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IMAGE_URL } from "./constants";
+import { IMAGE_URL } from "../constants/constants";
 
 function PokemonCard({ pokemon }) {
   return (

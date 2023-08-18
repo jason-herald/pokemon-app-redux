@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
-import { fetchPokemonList, fetchPokemonDetails } from "../../api";
+import { fetchPokemonList, fetchPokemonDetails } from "../../helpers/api";
 import "./ProductListingPage.css";
 import PokemonCard from "../../components/PokemonCard";
 import { useDispatch, useSelector } from "react-redux";
-import { setPokemonList } from "../../pokemonActions";
+import { setPokemonList } from "../../store/pokemonActions";
 
 function ProductListingPage() {
   const dispatch = useDispatch();

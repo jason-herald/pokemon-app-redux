@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProductListingPage from "./pages/ProductListingPage/ProductListingPage";
 import ProductDescriptionPage from "./pages/ProductDescriptionPage/ProductDescriptionPage";
 import "./index.css";
-import store from "./store";
+import store from "./store/store";
 import { Provider } from "react-redux";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
