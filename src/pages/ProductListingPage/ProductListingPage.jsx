@@ -18,7 +18,6 @@ function ProductListingPage() {
           return { ...pokemon, details };
         })
       );
-
       dispatch(setPokemonList({ pokemon: pokemonWithDetails }));
     }
     fetchData();

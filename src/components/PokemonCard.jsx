@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IMAGE_URL } from "../constants/constants";
+
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL;
 
 function PokemonCard({ pokemon }) {
   return (
@@ -11,7 +12,7 @@ function PokemonCard({ pokemon }) {
       />
       <p>{pokemon.name}</p>
       <p>
-        Type: {pokemon.details.types.map((type) => type.type.name).join(", ")}
+        Type: {pokemon.details.types?.map((type) => type.type.name).join(", ")}
       </p>
     </Link>
   );
